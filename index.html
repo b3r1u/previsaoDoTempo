@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Roboto:ital,wght@0,100;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" >
+            <input class="input-cidade" placeholder="Digite o nome da cidade">
+            <button class="botao-busca" onclick="onSearch()">
+                <img class="img-busca" src="img/lupa.png">
+            </button>
+
+            <div class="conteudo">
+                <h2 class="cidade">Tempo em...</h2>
+
+                <p class="temp"></p>
+
+                <div class="caixa-menor">
+                    <img class="img-previsao" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png">
+                    <p class="texto-previsao"></p>
+                </div>
+                
+                <p class="umidade">Umidade: </p>
+            </div>
+        </div>    
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1
+    });
+</script> 
+
+</body>
+</html>

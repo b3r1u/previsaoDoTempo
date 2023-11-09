@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/1950x1950/?landscape");
+}
+
+/*Card*/
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    color: #000;
+    
+}
+
+.container .card{
+    position: relative;
+    width: 380px;
+    height: 280px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: #000000;
+    opacity: 0.8;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-cidade{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #7C7C7C2B;
+    color: #ffff;
+    width: calc(100% - 60px);
+}
+
+.botao-busca{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #7C7C7C2B;
+    float: right;
+    border-radius: 10px;
+}
+
+.img-busca{
+    width: 20px;
+}
+
+.conteudo{
+    margin-top: 30px;
+}
+
+.cidade{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.temp{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.texto-previsao{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: #fff;
+    margin-top: 15px;
+}
